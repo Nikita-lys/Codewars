@@ -34,12 +34,14 @@ def tickets(people):
                 d[25] -= 1
                 d[50] -= 1
                 d[x] += 1
+            elif d[25] > 2:
+                d[25] -= 3
             else:
                 return 'NO'
     return 'YES'
 
 
-print(tickets([25, 50, 25, 50, 100]))
+print(tickets([25, 25, 25, 100]))
 print(tickets([25,25,75,25,25,50,50,50,50]))
 
 assert tickets([25, 25, 50]) == 'YES'
