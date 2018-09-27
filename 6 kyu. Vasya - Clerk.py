@@ -1,7 +1,5 @@
 # https://www.codewars.com/kata/vasya-clerk/
 
-# не проходит 1 тест
-
 
 def tickets(people):
     """
